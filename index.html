@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cookpal</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/Cookpal 1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Explor</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+                <img src="./assets/Ellipse 2.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Hero section -->
+        <div class="img-container">
+            <p>Trending now</p>
+            <h1>Mike’s famous salad
+                with cheese</h1>
+            <p>By John Mike</p>
+        </div>
+
+
+        <!-- search section -->
+        <div class="seach-section">
+            <h2>Search For Recipes</h2>
+            <form class="search-baar-container">
+                <input type="text" name="search" id="search-baar" placeholder="Search for recipes">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.5 4C7.63401 4 4.5 7.13401 4.5 11C4.5 14.866 7.63401 18 11.5 18C15.366 18 18.5 14.866 18.5 11C18.5 7.13401 15.366 4 11.5 4ZM2.5 11C2.5 6.02944 6.52944 2 11.5 2C16.4706 2 20.5 6.02944 20.5 11C20.5 15.9706 16.4706 20 11.5 20C6.52944 20 2.5 15.9706 2.5 11Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.4429 15.9429C16.8334 15.5524 17.4666 15.5524 17.8571 15.9429L22.2071 20.2929C22.5977 20.6834 22.5977 21.3166 22.2071 21.7071C21.8166 22.0977 21.1834 22.0977 20.7929 21.7071L16.4429 17.3571C16.0524 16.9666 16.0524 16.3334 16.4429 15.9429Z"
+                            fill="white" />
+                    </svg></button>
+            </form>
+        </div>
+
+        <!-- recipe type container -->
+
+        <div class="types-container">
+
+            <form class="recipe-form">
+                <div>
+                    <input type="radio" name="recipe" id="all-recipes" value="all">
+                    <label for="all-recipes">All Recipes <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            viewBox="0 0 26 26" fill="none">
+                            <path
+                                d="M14.2697 13L8.9072 7.63749L10.439 6.10565L17.3334 13L10.439 19.8943L8.9072 18.3625L14.2697 13Z"
+                                fill="white" />
+                        </svg></label>
+                </div>
+                <div>
+                    <input type="radio" name="recipe" id="veg" value="veg">
+                    <label for="veg">Veg Recipes Only <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            viewBox="0 0 26 26" fill="none">
+                            <path
+                                d="M14.2697 13L8.9072 7.63749L10.439 6.10565L17.3334 13L10.439 19.8943L8.9072 18.3625L14.2697 13Z"
+                                fill="white" />
+                        </svg></label>
+                </div>
+                <div>
+                    <input type="radio" name="recipe" id="non-veg" value="non-veg">
+                    <label for="non-veg">Non Veg Only <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            viewBox="0 0 26 26" fill="none">
+                            <path
+                                d="M14.2697 13L8.9072 7.63749L10.439 6.10565L17.3334 13L10.439 19.8943L8.9072 18.3625L14.2697 13Z"
+                                fill="white" />
+                        </svg></label>
+                </div>
+            </form>
+        </div>
+
+        <!-- filter and main container -->
+
+        <div class="filter-main-container">
+            <div class="filter">
+                <h3>Filters</h3>
+                <form class="rating-form">
+                    <p>Rating</p>
+                    <div class="rating-container">
+                        <div class="rating-input">
+                            <input type="radio" name="rating" id="rating-above-4" value="above-4">
+
+                            <label for="rating-above-4">
+                                <div class="checkbox"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 18 18" fill="none">
+                                        <g clip-path="url(#clip0_1_580)">
+                                            <path
+                                                d="M14.25 0H3.75001C1.67998 0.00249609 0.00249609 1.67998 0 3.75001V14.25C0.00249609 16.32 1.67998 17.9975 3.75001 18H14.25C16.32 17.9975 17.9975 16.32 18 14.25V3.75001C17.9975 1.67998 16.32 0.00249609 14.25 0ZM15 6.05925L8.0595 12.9998C7.47383 13.5857 6.52409 13.5859 5.93817 13.0002C5.93803 13 5.93789 12.9999 5.93775 12.9998L2.99999 10.0628C2.7065 9.76929 2.7065 9.29348 2.99999 9.00004C3.29347 8.70659 3.76928 8.70655 4.06273 9.00004L6.99971 11.937L13.941 4.99651C14.2344 4.70408 14.7094 4.70493 15.0018 4.99837C15.2943 5.29186 15.2935 5.76682 15 6.05925Z"
+                                                fill="#509E2F" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_580">
+                                                <rect width="18" height="18" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div> 4 and Above
+                            </label>
+                        </div>
+
+                        <div class="rating-input">
+                            <input type="radio" name="rating" id="below-4" value="below-4">
+
+                            <label for="below-4">
+                                <div class="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_1_580)">
+                                            <path
+                                                d="M14.25 0H3.75001C1.67998 0.00249609 0.00249609 1.67998 0 3.75001V14.25C0.00249609 16.32 1.67998 17.9975 3.75001 18H14.25C16.32 17.9975 17.9975 16.32 18 14.25V3.75001C17.9975 1.67998 16.32 0.00249609 14.25 0ZM15 6.05925L8.0595 12.9998C7.47383 13.5857 6.52409 13.5859 5.93817 13.0002C5.93803 13 5.93789 12.9999 5.93775 12.9998L2.99999 10.0628C2.7065 9.76929 2.7065 9.29348 2.99999 9.00004C3.29347 8.70659 3.76928 8.70655 4.06273 9.00004L6.99971 11.937L13.941 4.99651C14.2344 4.70408 14.7094 4.70493 15.0018 4.99837C15.2943 5.29186 15.2935 5.76682 15 6.05925Z"
+                                                fill="#509E2F" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_580">
+                                                <rect width="18" height="18" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div> Below 4
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Food card container -->
+
+            <div id="food-container" class="food-container">
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <footer id="footer">
+        <div id="footer-div">
+            <div class="cookpal-detail">
+                <img src="./assets/Cookpal 1.png" alt="">
+                <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search
+                    function. Join our community and let's cook together!</p>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Resources</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Home</a></td>
+                            <td><a href="#">Blog</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Explore</a></td>
+                            <td><a href="#">Use Cases</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Team</a></td>
+                            <td><a href="#">Testimonials</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">About us</a></td>
+                            <td><a href="#">Insights</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Activity</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="contact-section">
+                <img src="./assets/Cookpal 1.png" alt="">
+                <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#">
+                <img src="./assets/Instagram.png" alt="">
+            </a>
+            <a href="#"><img src="./assets/Twitter.png" alt=""></a>
+            <a href="#"><img src="./assets/Linkedin.png" alt=""></a>
+            <a href="#"><img src="./assets/Facebook.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
