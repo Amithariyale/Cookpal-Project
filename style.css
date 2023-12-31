@@ -76,9 +76,7 @@ nav li {
 }
 
 ul li a{
-    color: gray;
-    text-decoration: none;
-    transition: color 1s ease-in;
+    transition: color 1s ease;
 }
 
 ul li a:hover{
