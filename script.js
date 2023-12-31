@@ -121,7 +121,7 @@ let foodArr = [
   },
 ];
 const foodContainer = document.getElementById("food-container");
-const searchForm = document.querySelector(".search-baar-container");
+const searchFormInput = document.querySelector(".search-baar-container input");
 const recipeForm = document.querySelector(".recipe-form");
 const ratingForm = document.querySelector(".rating-form");
 
@@ -190,10 +190,9 @@ function loadAllFood() {
 
 // Filter item according to search input
 
-searchForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+searchFormInput.addEventListener("input", (e) => {
 
-  const searchInput = e.target.search.value.toLowerCase();
+  const searchInput = searchFormInput.value.toLowerCase();
   foodContainer.children[0].remove();
 
   const cardContainer = document.createElement("div");
@@ -260,4 +259,17 @@ function toggleLikeBtn(index) {
   const heartIcon = cardToUpdate.querySelector(".fa-heart");
 
   heartIcon.style.color = foodArr[index].isLiked ? "#FF0000" : "#252525";
+}
+
+// drawer toggle
+
+const drawer = document.getElementById("drawer");
+const drawerMenu = document.getElementById("drawer-menu");
+
+drawer.addEventListener("click", toggleDrawer);
+
+function toggleDrawer() {
+  if (drawerMenu.style.display === "none") {
+    drawerMenu.style.display = "flex";
+  } else drawerMenu.style.display = "none";
 }
